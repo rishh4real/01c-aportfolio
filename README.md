@@ -11,7 +11,7 @@ This portfolio showcases design projects spanning across:
 
 ## 🔗 Live Portfolio
 
-[View Live Portfolio](#)
+[View Live Portfolio](https://portfolio-shaurya28.vercel.app/)
 
 Visit the portfolio to explore the complete collection of design work.
 
@@ -57,7 +57,10 @@ Custom Instagram grid designs for various brands and businesses
 
 ## 📞 Get in Touch
 
-Interested in design work? Feel free to reach out!
+Interested in design work? Let's collaborate!
+
+- 📧 Email: [rishh4work@gmail.com](mailto:rishh4work@gmail.com)
+- 🌐 Portfolio: [https://portfolio-shaurya28.vercel.app/](https://portfolio-shaurya28.vercel.app/)
 
 ---
 
