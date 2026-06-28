@@ -11685,3 +11685,63 @@ body,
     font-size: clamp(3.2rem, 17vw, 4.8rem) !important;
   }
 }
+
+/* v76: compact reference-style portfolio loop, no designer tag. */
+.fresh-cover__masthead {
+  width: min(100%, 1040px);
+  overflow: visible;
+}
+
+.fresh-cover__masthead p,
+.fresh-cover__masthead h1,
+.fresh-cover__masthead span {
+  position: relative;
+  z-index: 5;
+}
+
+.fresh-cover__portfolio-flourish {
+  position: absolute;
+  left: clamp(230px, 18vw, 340px);
+  top: clamp(4px, 1.2vw, 26px);
+  z-index: 4;
+  width: clamp(430px, 42vw, 760px);
+  height: auto;
+  overflow: visible;
+  color: #d94f8d;
+  pointer-events: none;
+}
+
+.fresh-cover__portfolio-flourish path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.72;
+}
+
+.fresh-cover__portfolio-flourish polygon {
+  fill: currentColor;
+  opacity: 0.9;
+}
+
+.fresh-cover__scribble,
+.fresh-cover__star--one {
+  display: none !important;
+}
+
+@media (max-width: 920px) {
+  .fresh-cover__portfolio-flourish {
+    left: 26%;
+    top: 42px;
+    width: min(66vw, 460px);
+  }
+}
+
+@media (max-width: 560px) {
+  .fresh-cover__portfolio-flourish {
+    left: 20%;
+    top: 50px;
+    width: 70vw;
+  }
+}
