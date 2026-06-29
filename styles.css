@@ -11745,3 +11745,35 @@ body,
     width: 70vw;
   }
 }
+
+/* v77: remove client-rejected band-aid and star while keeping the hero balanced. */
+.fresh-cover__masthead::after {
+  display: none !important;
+}
+
+.fresh-cover__portfolio-flourish {
+  left: clamp(245px, 19vw, 360px);
+  top: clamp(8px, 1.4vw, 30px);
+  width: clamp(390px, 39vw, 710px);
+}
+
+.fresh-cover__portfolio-flourish path {
+  stroke-width: 4;
+  opacity: 0.68;
+}
+
+@media (max-width: 920px) {
+  .fresh-cover__portfolio-flourish {
+    left: 28%;
+    top: 44px;
+    width: min(62vw, 430px);
+  }
+}
+
+@media (max-width: 560px) {
+  .fresh-cover__portfolio-flourish {
+    left: 22%;
+    top: 52px;
+    width: 66vw;
+  }
+}
