@@ -12325,23 +12325,6 @@ body {
     0 0 0 7px rgba(217, 79, 141, 0.1) !important;
 }
 
-.fresh-cover__brand::before {
-  content: "SQUARE\A DESIGN";
-  position: absolute;
-  left: clamp(72px, 4.55vw, 88px);
-  top: clamp(39px, 2.75vw, 52px);
-  z-index: 3;
-  color: rgba(255, 248, 252, 0.96);
-  font-size: clamp(0.48rem, 0.46vw, 0.62rem);
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  line-height: 1.18;
-  text-align: left;
-  text-shadow: 0 1px 3px rgba(15, 8, 13, 0.45);
-  white-space: pre;
-  pointer-events: none;
-}
-
 .archive-brand img {
   border-radius: 16px !important;
   object-fit: contain !important;
@@ -12353,13 +12336,6 @@ body {
   .fresh-cover__brand {
     min-height: 96px;
     padding: 12px 14px !important;
-  }
-
-  .fresh-cover__brand::before {
-    left: clamp(58px, 15.2vw, 68px);
-    top: clamp(30px, 8.5vw, 36px);
-    font-size: clamp(0.35rem, 1.55vw, 0.44rem);
-    letter-spacing: 0.1em;
   }
 
   .fresh-cover__brand img {
