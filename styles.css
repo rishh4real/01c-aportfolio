@@ -12303,3 +12303,51 @@ body {
     display: none !important;
   }
 }
+
+/* v80: show A Square logo as a larger square tile instead of a circular crop. */
+.fresh-cover__brand {
+  min-height: clamp(126px, 7.8vw, 150px);
+  padding: clamp(12px, 1vw, 16px) clamp(22px, 2vw, 32px) clamp(12px, 1vw, 16px) clamp(12px, 1vw, 16px) !important;
+}
+
+.fresh-cover__brand img {
+  width: clamp(104px, 6.8vw, 128px) !important;
+  height: clamp(104px, 6.8vw, 128px) !important;
+  border-radius: 20px !important;
+  object-fit: contain !important;
+  padding: 4px;
+  background: #0f080d;
+  border: 4px solid rgba(255, 244, 248, 0.98);
+  filter: saturate(1.22) contrast(1.2) brightness(1.1);
+  box-shadow:
+    0 16px 34px rgba(141, 47, 95, 0.22),
+    0 0 0 7px rgba(217, 79, 141, 0.1) !important;
+}
+
+.archive-brand img {
+  border-radius: 16px !important;
+  object-fit: contain !important;
+  padding: 4px;
+  background: #0f080d;
+}
+
+@media (max-width: 768px) {
+  .fresh-cover__brand {
+    min-height: 96px;
+    padding: 12px 14px !important;
+  }
+
+  .fresh-cover__brand img {
+    width: clamp(70px, 20vw, 86px) !important;
+    height: clamp(70px, 20vw, 86px) !important;
+    border-radius: 16px !important;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 375px) {
+  .fresh-cover__brand img {
+    width: 68px !important;
+    height: 68px !important;
+  }
+}
