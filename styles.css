@@ -6727,6 +6727,7 @@ body,
 .fresh-cover__brand img {
   width: 62px !important;
   height: 62px !important;
+  object-fit: contain !important;
   box-shadow: 0 10px 24px rgba(141, 47, 95, 0.18);
 }
 
@@ -6987,10 +6988,10 @@ body,
 }
 
 .fresh-cover__brand img {
-  width: 38px;
-  height: 38px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .fresh-cover__brand span {
@@ -9340,7 +9341,7 @@ body,
   width: 58px;
   height: 58px;
   border-radius: 14px;
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: 0 12px 24px rgba(41, 15, 27, 0.18);
 }
 
