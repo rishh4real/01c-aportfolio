@@ -6968,8 +6968,8 @@ body,
   z-index: 8;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 10px 16px 10px 10px;
+  gap: 16px;
+  padding: 14px 24px 14px 14px;
   border: 1px solid rgba(141, 47, 95, 0.18);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
@@ -6988,14 +6988,15 @@ body,
 }
 
 .fresh-cover__brand img {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 8px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .fresh-cover__brand span {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .fresh-cover__star,
