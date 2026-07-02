@@ -12394,3 +12394,80 @@ body {
     height: 66px !important;
   }
 }
+
+/* v84: mobile logo-only badge and smaller device preview section. */
+.feed-device-story {
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.feed-device-pair {
+  max-width: 800px;
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 0.9fr) minmax(130px, 0.3fr);
+  gap: clamp(16px, 2.8vw, 34px);
+}
+
+.feed-device-pair .device-frame--desktop {
+  width: min(100%, 540px);
+  justify-self: end;
+}
+
+.feed-device-pair .device-frame--phone {
+  width: min(100%, 150px);
+  justify-self: start;
+}
+
+.device-frame--desktop .device-frame__screen {
+  max-height: min(44vh, 390px);
+}
+
+@media (max-width: 900px) {
+  .feed-device-pair .device-frame--desktop {
+    width: min(100%, 460px);
+    justify-self: center;
+  }
+
+  .feed-device-pair .device-frame--phone {
+    width: min(54vw, 180px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .fresh-cover__brand,
+  .archive-brand {
+    width: max-content !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    justify-self: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    padding: 12px !important;
+    border-radius: 30px !important;
+  }
+
+  .fresh-cover__brand span,
+  .archive-brand span {
+    display: none !important;
+  }
+
+  .fresh-cover__brand img,
+  .archive-brand img {
+    width: clamp(102px, 30vw, 122px) !important;
+    height: clamp(102px, 30vw, 122px) !important;
+    border-radius: 22px !important;
+  }
+
+  .feed-device-pair .device-frame--phone {
+    width: min(58vw, 190px) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .fresh-cover__brand img,
+  .archive-brand img {
+    width: 104px !important;
+    height: 104px !important;
+  }
+}
