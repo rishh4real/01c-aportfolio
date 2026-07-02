@@ -12352,3 +12352,45 @@ body {
     height: 68px !important;
   }
 }
+
+/* v83: keep the readable square logo cleanly inside the brand badge. */
+.fresh-cover__brand {
+  min-height: clamp(126px, 7.3vw, 142px);
+  gap: clamp(18px, 1.65vw, 28px) !important;
+  padding: clamp(14px, 1.05vw, 18px) clamp(24px, 2vw, 34px) clamp(14px, 1.05vw, 18px) clamp(20px, 1.45vw, 28px) !important;
+  overflow: visible;
+}
+
+.fresh-cover__brand img {
+  width: clamp(96px, 5.65vw, 112px) !important;
+  height: clamp(96px, 5.65vw, 112px) !important;
+  border-radius: 18px !important;
+  padding: 3px;
+  box-shadow:
+    0 10px 24px rgba(141, 47, 95, 0.18),
+    0 0 0 4px rgba(217, 79, 141, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+  .fresh-cover__brand {
+    min-height: 96px;
+    gap: 12px !important;
+    padding: 12px 14px !important;
+  }
+
+  .fresh-cover__brand img {
+    width: clamp(68px, 19vw, 82px) !important;
+    height: clamp(68px, 19vw, 82px) !important;
+    border-radius: 15px !important;
+    box-shadow:
+      0 10px 20px rgba(141, 47, 95, 0.16),
+      0 0 0 3px rgba(217, 79, 141, 0.08) !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .fresh-cover__brand img {
+    width: 66px !important;
+    height: 66px !important;
+  }
+}
